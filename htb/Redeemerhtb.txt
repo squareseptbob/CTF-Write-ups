@@ -1,0 +1,12 @@
+# use nmap and scan all the ports
+nmap -p- [ip]
+# then use to get the version or just use all thogether 
+nmpa -p [port] -sV
+# use to gather information
+info 
+# use  
+keys *
+# now with the keys use 
+get flag
+03e1d2b376c37ab3f5319922053953eb
+

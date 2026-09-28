@@ -1,0 +1,7 @@
+# use nmap to scan the por 445 bc that is the one that uses SMB
+nmap -p [port] -sV [ip]
+# use smblient -L 
+# enter the share whitout $ that is usually that does not have pasword
+# enter with smbclient 
+smbclient //[ip]/share
+# moce around the folders and get the flag

@@ -1,0 +1,207 @@
+
+lvl0
+# to enter the server
+ssh [host] -l [username] -p [port]
+# read the file
+cat readme
+# file password
+ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+
+lvl1r
+# use
+cat ./-
+# bc that way the special character "-" does not get in the way
+# file password
+263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+
+lvl2
+# use "" to confine the name of the file with " "
+cat ./"--spaces in this filename--"
+MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+
+lvl3
+#use ls -a to search for hidden files
+#. is the syntax for hidden files, and everything after the . is name
+# use cat normally
+2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+
+lvl4
+# use ls get on the directory
+# use file like this, that way you can know what is the human readable file
+file ./*
+# that way you can search all the files on the directory, and don't worry bc the files starts with "-"
+4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+
+lvl5
+# use find and give the type and size
+find . -type f -size 1033c
+# . is for the current path, -type f is for a type file, and -size 1033c is for size 1033 bytes witch is c
+HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
+lvl 6
+# you have to go to the root "/" bc the file may be in hole server
+# in the / you use
+find -user bandit7 -group bandit6 size 33c
+# -user is for user and -group is for group
+morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+
+lvl7
+# use
+grep -n "millionth" data.txt
+# that way grep will search the line with the word millionth who has the key on it
+dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+
+lvl8
+#use sort data.txt | uniq -c
+# that way will show you the quantity of strings, and you have to search for the one who has just one
+4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+
+lvl9
+# use
+strings data.txt | grep -E '====='
+# with this code u first separate all the non readable content and then use grep to only see the ones who as a series of ==== before the content
+FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+
+lvl10
+# just decode using base64
+base64 -d data.txt
+dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
+lvl11
+# use tr to chanche the possitions of the letters like ROT13
+cat data.txt | tr 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' 'NOPQRSTUVWXYZABCDEFGHIJKLM' | tr 'abcdefghijklmnopqrstuvwxyz' 'nopqrstuvwxyzabcdefghijklm'
+7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+
+lvl12
+# create a temp directory
+mktemp -d
+# copy data.txt into the temp direcotry and then go to the temp directory
+# now use 
+xdd -r data.txt 
+# this way you will extract the hex into an ascci text
+# now use file on the new file and decompres based on the file type 
+# use depending on the situation 
+gzip -d bzip1 -d tar -xf
+FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+
+lvl13
+# use cat to read the sshkey.private
+# then copy the private key and exit
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAxkkOE83W2cOT7IWhFc9aPaaQmQDdgzuXCv+ppZHa++buSkN+
+gg0tcr7Fw8NLGa5+Uzec2rEg0WmeevB13AIoYp0MZyETq46t+jk9puNwZwIt9XgB
+ZufGtZEwWbFWw/vVLNwOXBe4UWStGRWzgPpEeSv5Tb1VjLZIBdGphTIK22Amz6Zb
+ThMsiMnyJafEwJ/T8PQO3myS91vUHEuoOMAzoUID4kN0MEZ3+XahyK0HJVq68KsV
+ObefXG1vvA3GAJ29kxJaqvRfgYnqZryWN7w3CHjNU4c/2Jkp+n8L0SnxaNA+WYA7
+jiPyTF0is8uzMlYQ4l1Lzh/8/MpvhCQF8r22dwIDAQABAoIBAQC6dWBjhyEOzjeA
+J3j/RWmap9M5zfJ/wb2bfidNpwbB8rsJ4sZIDZQ7XuIh4LfygoAQSS+bBw3RXvzE
+pvJt3SmU8hIDuLsCjL1VnBY5pY7Bju8g8aR/3FyjyNAqx/TLfzlLYfOu7i9Jet67
+xAh0tONG/u8FB5I3LAI2Vp6OviwvdWeC4nOxCthldpuPKNLA8rmMMVRTKQ+7T2VS
+nXmwYckKUcUgzoVSpiNZaS0zUDypdpy2+tRH3MQa5kqN1YKjvF8RC47woOYCktsD
+o3FFpGNFec9Taa3Msy+DfQQhHKZFKIL3bJDONtmrVvtYK40/yeU4aZ/HA2DQzwhe
+ol1AfiEhAoGBAOnVjosBkm7sblK+n4IEwPxs8sOmhPnTDUy5WGrpSCrXOmsVIBUf
+laL3ZGLx3xCIwtCnEucB9DvN2HZkupc/h6hTKUYLqXuyLD8njTrbRhLgbC9QrKrS
+M1F2fSTxVqPtZDlDMwjNR04xHA/fKh8bXXyTMqOHNJTHHNhbh3McdURjAoGBANkU
+1hqfnw7+aXncJ9bjysr1ZWbqOE5Nd8AFgfwaKuGTTVX2NsUQnCMWdOp+wFak40JH
+PKWkJNdBG+ex0H9JNQsTK3X5PBMAS8AfX0GrKeuwKWA6erytVTqjOfLYcdp5+z9s
+8DtVCxDuVsM+i4X8UqIGOlvGbtKEVokHPFXP1q/dAoGAcHg5YX7WEehCgCYTzpO+
+xysX8ScM2qS6xuZ3MqUWAxUWkh7NGZvhe0sGy9iOdANzwKw7mUUFViaCMR/t54W1
+GC83sOs3D7n5Mj8x3NdO8xFit7dT9a245TvaoYQ7KgmqpSg/ScKCw4c3eiLava+J
+3btnJeSIU+8ZXq9XjPRpKwUCgYA7z6LiOQKxNeXH3qHXcnHok855maUj5fJNpPbY
+iDkyZ8ySF8GlcFsky8Yw6fWCqfG3zDrohJ5l9JmEsBh7SadkwsZhvecQcS9t4vby
+9/8X4jS0P8ibfcKS4nBP+dT81kkkg5Z5MohXBORA7VWx+ACohcDEkprsQ+w32xeD
+qT1EvQKBgQDKm8ws2ByvSUVs9GjTilCajFqLJ0eVYzRPaY6f++Gv/UVfAPV4c+S0
+kAWpXbv5tbkkzbS0eaLPTKgLzavXtQoTtKwrjpolHKIHUz6Wu+n4abfAIRFubOdN
+/+aLoRQ0yBDRbdXMsZN/jvY44eM+xRLdRVyMmdPtP8belRi2E2aEzA==
+-----END RSA PRIVATE KEY-----
+# use echo to store the private key 
+# then run this on your computer
+ssh [profile]@[host] -p [port] -i [private key file]
+# then go to /etc/bandit_pass/bandit14 and use cat to read the file
+MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+
+lvl14
+# use nc to enter the localhost on port 30000
+nc [destination] [port]
+#then enter the last password
+8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+
+lvl15
+# use 
+openssl s_client -connect [host]:[port]
+# then write the last password
+kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+
+lvl16
+# first use 
+nmap -p [range]-[range] [host]
+# use this on local host with the range of ports that appears on the page
+# you will get a set of open ports, now use 
+namap -p [ports that you get previusly] -sV [host]
+# this will give you th serices running on those ports 
+# look for ssl and discard everthin with echo bc they only repeat what you send to them 
+# open the port with
+openssl s_client -connect localhost:31790 -quiet
+# -quiet is very impoertant bc with the first leter of the password cou can activate special controls actions, so this way you do not active them and just send the passwrod and get the private key
+-----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEAvmOkuifmMg6HL2YPIOjon6iWfbp7c3jx34YkYWqUH57SUdyJ
+imZzeyGC0gtZPGujUSxiJSWI/oTqexh+cAMTSMlOJf7+BrJObArnxd9Y7YT2bRPQ
+Ja6Lzb558YW3FZl87ORiO+rW4LCDCNd2lUvLE/GL2GWyuKN0K5iCd5TbtJzEkQTu
+DSt2mcNn4rhAL+JFr56o4T6z8WWAW18BR6yGrMq7Q/kALHYW3OekePQAzL0VUYbW
+JGTi65CxbCnzc/w4+mqQyvmzpWtMAzJTzAzQxNbkR2MBGySxDLrjg0LWN6sK7wNX
+x0YVztz/zbIkPjfkU1jHS+9EbVNj+D1XFOJuaQIDAQABAoIBABagpxpM1aoLWfvD
+KHcj10nqcoBc4oE11aFYQwik7xfW+24pRNuDE6SFthOar69jp5RlLwD1NhPx3iBl
+J9nOM8OJ0VToum43UOS8YxF8WwhXriYGnc1sskbwpXOUDc9uX4+UESzH22P29ovd
+d8WErY0gPxun8pbJLmxkAtWNhpMvfe0050vk9TL5wqbu9AlbssgTcCXkMQnPw9nC
+YNN6DDP2lbcBrvgT9YCNL6C+ZKufD52yOQ9qOkwFTEQpjtF4uNtJom+asvlpmS8A
+vLY9r60wYSvmZhNqBUrj7lyCtXMIu1kkd4w7F77k+DjHoAXyxcUp1DGL51sOmama
++TOWWgECgYEA8JtPxP0GRJ+IQkX262jM3dEIkza8ky5moIwUqYdsx0NxHgRRhORT
+8c8hAuRBb2G82so8vUHk/fur85OEfc9TncnCY2crpoqsghifKLxrLgtT+qDpfZnx
+SatLdt8GfQ85yA7hnWWJ2MxF3NaeSDm75Lsm+tBbAiyc9P2jGRNtMSkCgYEAypHd
+HCctNi/FwjulhttFx/rHYKhLidZDFYeiE/v45bN4yFm8x7R/b0iE7KaszX+Exdvt
+SghaTdcG0Knyw1bpJVyusavPzpaJMjdJ6tcFhVAbAjm7enCIvGCSx+X3l5SiWg0A
+R57hJglezIiVjv3aGwHwvlZvtszK6zV6oXFAu0ECgYAbjo46T4hyP5tJi93V5HDi
+Ttiek7xRVxUl+iU7rWkGAXFpMLFteQEsRr7PJ/lemmEY5eTDAFMLy9FL2m9oQWCg
+R8VdwSk8r9FGLS+9aKcV5PI/WEKlwgXinB3OhYimtiG2Cg5JCqIZFHxD6MjEGOiu
+L8ktHMPvodBwNsSBULpG0QKBgBAplTfC1HOnWiMGOU3KPwYWt0O6CdTkmJOmL8Ni
+blh9elyZ9FsGxsgtRBXRsqXuz7wtsQAgLHxbdLq/ZJQ7YfzOKU4ZxEnabvXnvWkU
+YOdjHdSOoKvDQNWu6ucyLRAWFuISeXw9a/9p7ftpxm0TSgyvmfLF2MIAEwyzRqaM
+77pBAoGAMmjmIJdjp+Ez8duyn3ieo36yrttF5NSsJLAbxFpdlc1gvtGCWW+9Cq0b
+dxviW8+TFVEBl1O4f7HVm6EpTscdDxU+bCXWkfjuRb7Dy9GOtt9JPsX8MBTakzh3
+vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
+-----END RSA PRIVATE KEY-----
+
+lvl17
+# use diff between the diles to se the change 
+diff [file0] [file1]
+x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+
+lvl18
+# use ls and cat remotely 
+ssh bandit18@bandit.labs.overthewire.org -p 2220 "commands" 
+cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+
+lvl19
+# theres a setuid boinary on the homedirectory 
+# when excecute whoami on the setuid binary it says bandit 20 
+# this way you have the permissions to access the pass for bandit20 
+./bandit20-do /etc/bandit_pass/bandit20
+0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+
+lvl20
+# you have to listen on a port using nc 
+nc -lvp [port]
+# then you have to use the setuid binary with the port that you used earlier
+./ suconnect [port]
+# then insert the old pasword on the other terminal
+EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+
+lvl21
+# go to the directory and see the files 
+# use cat to read the files 
+# go to the files location 
+# go to the tmp location and use cat
+tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+
+lvl22
+#
